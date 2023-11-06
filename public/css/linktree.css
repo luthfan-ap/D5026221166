@@ -1,0 +1,128 @@
+body {
+    /* background-color:antiquewhite; */
+    text-align: center;
+    background-image: linear-gradient(white, #DAEAEE);
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight:bold;
+    text-align: center;
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight:600;
+    margin-top: 0px;
+}
+
+p2 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight:600;
+    text-align: center;
+    vertical-align: middle;
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-luthfan {
+    height: 40px;
+    width: 40px;
+    padding-left: 650px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.circle-luthfan {
+    background-color: #F0F0F0;
+    height: 40px;
+    width: 40px;
+    margin-right: 0px;
+    border-radius: 50%;
+}
+.circle:hover-luthfan {
+    background-color: lightgrey;
+}
+
+.button-photo-luthfan {
+    background-color: #F0F0F0;
+    height: 40px;
+    width: 40px;
+    margin-right: 0px;
+    border-radius: 50%;
+}
+
+.profile-section-luthfan {
+    margin-bottom: 30px;
+}
+
+.profile-pic-luthfan {
+    width: 96px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.button-list-luthfan {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.button-luthfan {
+    background-color: white;
+    border-color:navy;
+    height: 30px;
+    width: 600px;
+    border-radius: 30px;
+    padding: 16px 44px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.button:hover-luthfan {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.button-text-luthfan {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    vertical-align:middle;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.footer-luthfan {
+    justify-content: center;
+    margin: auto;
+}
+
+.social-media-logo-luthfan {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+}
+
+.footer-logo-luthfan {
+    margin: 20px;
+    align-items: center;
+    height: 20px;
+    padding: 8px;
+    margin-bottom: 50px;
+}
