@@ -58,6 +58,8 @@
                                 Sistem Informasi ITS
                                 <br>
                                 <?php echo date("D, d M Y") ; ?>
+                                <br>
+                                <?php echo date("l"); ?>
                                 </div>
                             </div>
                         </div>

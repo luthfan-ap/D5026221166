@@ -14,5 +14,6 @@
         Umur    : {{ $umur }}
     </p>
 
+    <a href="/pegawai/{{ date('d-m-Y') }}">Klik Di Sini</a>
 </body>
 </html>
