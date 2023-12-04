@@ -96,7 +96,7 @@ class PegawaiController extends Controller
             return view('index', ['pegawai' => $pegawai]);
     }
 
-    // method untuk edit data pegawai
+    // method untuk view data pegawai
     public function view($id)
     {
         // mengambil data pegawai berdasarkan id yang dipilih
