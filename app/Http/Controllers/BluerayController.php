@@ -90,7 +90,7 @@ class BluerayController extends Controller
 
         // mengambil data dari table blueray sesuai pencarian data
         $blueray = DB::table('blueray')
-            ->where('kodeblueray', 'like', "%".$cari."%")
+            ->where('merkblueray', 'like', "%".$cari."%")
             ->paginate();
 
             return view('index', ['blueray' => $blueray]);
