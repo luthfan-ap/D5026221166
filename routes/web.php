@@ -82,3 +82,13 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@index');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiController@store');
 Route::get('/nilaikuliah/tambahNilai','App\Http\Controllers\NilaiController@tambah');
+
+Route::get('/blueray', 'App\Http\Controllers\BluerayController@index');
+Route::get('/blueray/tambah','App\Http\Controllers\BluerayController@tambah');
+Route::post('/blueray/store','App\Http\Controllers\BluerayController@store');
+Route::get('/blueray/edit/{kode}','App\Http\Controllers\BluerayController@edit');
+Route::post('/blueray/update','App\Http\Controllers\BluerayController@update');
+Route::get('/blueray/hapus/{kode}','App\Http\Controllers\BluerayController@hapus');
+
+Route::get('/blueray/cari','App\Http\Controllers\BluerayController@cari');
+Route::get('/blueray/view/{kode}','App\Http\Controllers\BluerayController@view');

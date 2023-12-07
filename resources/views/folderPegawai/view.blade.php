@@ -1,11 +1,12 @@
 @extends('master2')
 
     @section('konten')
-	<h3>Data Blueray</h3>
+	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+	<h3>Data Pegawai</h3>
 
 	<br/>
 
-    @foreach($blueray as $b)
+    @foreach($pegawai as $p)
     <form action="">
         {{ csrf_field() }}
 
@@ -13,37 +14,37 @@
             <div class="col-4 border">
             </div>
             <div class="col-8">
-                {{-- KODE --}}
+                {{-- NAMA --}}
                 <div class="form-group row">
-                    <label for="kode" class="col-sm-2 control-label">Kode:</label>
+                    <label for="nama" class="col-sm-2 control-label">Nama:</label>
                     <div class="col-sm-8">
-                        {{ $b->kodeblueray }}
+                        {{ $p->pegawai_nama }}
                     </div>
                 </div>
-                {{-- MERK --}}
+                {{-- JABATAN --}}
                 <div class="form-group row">
-                    <label for="merk" class="col-sm-2 control-label">Merk:</label>
+                    <label for="jabatan" class="col-sm-2 control-label">Jabatan:</label>
                     <div class="col-sm-8">
-                        {{ $b->merkblueray }}
+                        {{ $p->pegawai_jabatan }}
                     </div>
                 </div>
-                {{-- STOCK --}}
+                {{-- UMUR --}}
                 <div class="form-group row">
-                    <label for="stock" class="col-sm-2 control-label">Stock:</label>
+                    <label for="umur" class="col-sm-2 control-label">Umur:</label>
                     <div class="col-sm-8">
-                        {{ $b->stockblueray }}
+                        {{ $p->pegawai_umur }}
                     </div>
                 </div>
-                {{-- KETERSEDIAAN --}}
+                {{-- ALAMAT --}}
                 <div class="form-group row">
-                    <label for="alamat" class="col-sm-2 control-label">Ketersediaan (Y/N):</label>
+                    <label for="alamat" class="col-sm-2 control-label">Alamat:</label>
                     <div class="col-sm-8">
-                        {{ $b->tersedia }}
+                        {{ $p->pegawai_alamat }}
                     </div>
                 </div>
 
                 <div class="col-sm-2 align-items-center mx-auto">
-                    <a href="/blueray" class="btn btn-primary col-sm-8">OK</a>
+                    <a href="/pegawai" class="btn btn-primary col-sm-8">OK</a>
                 </div>
             </div>
         </div>
