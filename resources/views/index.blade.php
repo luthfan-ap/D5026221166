@@ -47,4 +47,6 @@
 		@endforeach
 	</table>
 
+    {{ $blueray->links() }}
+
 @endsection

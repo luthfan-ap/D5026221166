@@ -13,7 +13,7 @@ class BluerayController extends Controller
     	// mengambil data dari table blueray
     	// $blueray = DB::table('blueray')->get();
 
-    	$blueray = DB::table('blueray')->get();
+    	$blueray = DB::table('blueray')->paginate(5);
         // tergantung bagian mana yang mau ditampilkan
     	// mengirim data blueray ke view index
     	return view('index',['blueray' => $blueray]);
