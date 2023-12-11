@@ -16,7 +16,7 @@ class BluerayController extends Controller
     	$blueray = DB::table('blueray')->paginate(5);
         // tergantung bagian mana yang mau ditampilkan
     	// mengirim data blueray ke view index
-    	return view('index',['blueray' => $blueray]);
+    	return view('folderBlueray/index',['blueray' => $blueray]);
 
     }
 
@@ -24,7 +24,7 @@ class BluerayController extends Controller
     public function tambah()
     {
         // memanggil view tambah
-        return view('tambah');
+        return view('folderBlueray/tambah');
 
     }
 
@@ -52,7 +52,7 @@ class BluerayController extends Controller
             ->where('kodeblueray',$kode)
             ->get();
             // passing data blueray yang didapat ke view edit.blade.php
-        return view('edit',['blueray' => $blueray]);
+        return view('folderBlueray/edit',['blueray' => $blueray]);
 
     }
 
@@ -93,7 +93,7 @@ class BluerayController extends Controller
             ->where('merkblueray', 'like', "%".$cari."%")
             ->paginate();
 
-            return view('index', ['blueray' => $blueray]);
+            return view('folderBlueray/index', ['blueray' => $blueray]);
     }
 
     // method untuk view data blueray
@@ -104,7 +104,7 @@ class BluerayController extends Controller
             ->where('kodeblueray', $kode)
             ->get();
         // passing data blueray yang didapat ke view edit.blade.php
-        return view('view',['blueray' => $blueray]);
+        return view('folderBlueray/view',['blueray' => $blueray]);
 
     }
 }

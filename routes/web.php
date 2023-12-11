@@ -92,3 +92,7 @@ Route::get('/blueray/hapus/{kode}','App\Http\Controllers\BluerayController@hapus
 
 Route::get('/blueray/cari','App\Http\Controllers\BluerayController@cari');
 Route::get('/blueray/view/{kode}','App\Http\Controllers\BluerayController@view');
+Route::get('/blueray', 'App\Http\Controllers\BluerayController@index');
+
+Route::get('/kategori', 'App\Http\Controllers\KategoriController@index');
+Route::get('/kategori/view/','App\Http\Controllers\KategoriController@view');
